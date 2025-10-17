@@ -1,17 +1,29 @@
 #!/usr/bin/env python3
 """
-BTC Order Flow Analyzer - Production Ready
+BTC Order Flow Analyzer - Production Version for Render.com
 """
 
-from src.app import app
+from app import app
 import warnings
+import os
 
 warnings.filterwarnings('ignore')
 
-if __name__ == '__main__':
-    # For production use
-    app.run_server(
+def main():
+    print("🚀 Starting BTC Order Flow Analyzer...")
+    print("📊 Initializing application...")
+    
+    # Get port from environment variable (required for Render)
+    port = int(os.environ.get("PORT", 8050))
+    
+    # Run the app
+    app.run(
         host='0.0.0.0',
-        port=8050,
-        debug=False  # Set to False in production
+        port=port,
+        debug=False,
+        dev_tools_ui=False,
+        dev_tools_props_check=False
     )
+
+if __name__ == '__main__':
+    main()
