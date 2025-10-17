@@ -25,8 +25,8 @@ A professional web-based order flow analysis tool for BTC/USDT trading pair. Vis
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/btc-order-flow-analyzer.git
-   cd btc-order-flow-analyzer
+   git clone https://github.com/StefiT/order_flow.git
+   cd order_flow
    
  
 ##Usage Guide
@@ -101,5 +101,6 @@ Dash App: Web framework for the user interface
 📱 Interactive: Zoom, pan, hover tooltips
 
 🏗 Modular Architecture: Clean, organized code structure
+
 
 📚 Comprehensive Documentation: Easy setup and usage instructions
